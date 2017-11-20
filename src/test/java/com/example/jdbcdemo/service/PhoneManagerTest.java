@@ -92,6 +92,20 @@ public class PhoneManagerTest {
 		assertEquals(PRICE_1, phoneFromSearch.getPrice(),5);
 		assertEquals(MODEL_1, phoneFromSearch.getModel());
 		assertEquals(VAT_1, phoneFromSearch.getVat());
-
+	}
+	
+	@Test
+	public void checkDeleteAll(){
+			List<Phone> phones = new ArrayList<>();
+			Phone phone5 = new Phone(MARK_1, PRICE_1, MODEL_1, VAT_1);
+			phones.add(phone1);
+			phones.add(phone2);
+			phones.add(phone3);
+			phones.add(phone4);
+			phones.add(phone5);
+			phoneManager.deleteAll(phones);
+			int size = phoneManager.getAllPhones().size();
+			
+			assertThat(size, either(is(4)).or(is(0)));
 	}
 }
