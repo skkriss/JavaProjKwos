@@ -1,3 +1,3 @@
-# JavaProjKwos
+Technologie utrwalania danych dla języka Java
 
-"Telefony"
+Krystian Woś
