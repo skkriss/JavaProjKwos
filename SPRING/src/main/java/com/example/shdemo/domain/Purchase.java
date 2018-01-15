@@ -43,7 +43,7 @@ public class Purchase {
         this.client = client;
     }
 
-    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY) 
     public Phone getPhone() {
         return phone;
     }

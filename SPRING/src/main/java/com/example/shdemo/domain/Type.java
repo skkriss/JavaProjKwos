@@ -14,7 +14,7 @@ public class Type {
     public Long id;
     public String mark;
     public String description;
-    public List<Phone> phones = new ArrayList();
+    public List<Phone> phones = new ArrayList<Phone>();
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -26,7 +26,7 @@ public class Type {
         this.id = id;
     }
 
-    @Column(unique = true, nullable = false)
+    @Column(unique = true, nullable = false) //nadanie unika na typ aby nie bylo powtorzen
     public String getMark() {
         return mark;
     }

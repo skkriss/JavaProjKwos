@@ -15,11 +15,11 @@ public class PhoneManagerTestWithoutTransactional {
     @Autowired
     PhoneManager phoneManager;
 
-    private final static String CLIENT_NAME_1 = "Adam";
-    private final static String CLIENT_PIN_1 = "1122";
+    private final static String CLIENT_NAME_1 = "Pawel";
+    private final static String CLIENT_PIN_1 = "1234";
 
 
-    @Test
+    @Test //Lazy pobiera klienta ale nie pobiera zakupów przez co wyrzuca blad
     public void lazyExceptionCheck()
     {
         Long id = Long.valueOf(1);

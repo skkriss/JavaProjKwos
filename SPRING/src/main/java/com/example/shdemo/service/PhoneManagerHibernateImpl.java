@@ -1,6 +1,6 @@
 package com.example.shdemo.service;
 
-import java.util.List;
+import java.util.List; //implementacja metod z Phone Manager
 
 import com.example.shdemo.domain.Client;
 import com.example.shdemo.domain.Purchase;

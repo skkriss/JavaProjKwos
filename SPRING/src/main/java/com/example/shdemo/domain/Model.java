@@ -6,7 +6,7 @@ import java.util.List;
 
 @Entity
 @NamedQueries({
-        @NamedQuery(name = "type.all", query = "Select t from Type t")
+        @NamedQuery(name = "model.all", query = "Select t from Model t")
 })
 public class Model {
 
@@ -14,7 +14,7 @@ public class Model {
     public Long id;
     public String mark;
     public String description;
-    public List<Phone> phones = new ArrayList();
+    public List<Phone> phones = new ArrayList<Phone>();
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

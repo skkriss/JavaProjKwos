@@ -55,7 +55,7 @@ public class Client {
         this.pin = pin;
     }
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY) //lista zakupów u klienta.
     public List<Purchase> getPurchases() {
         return purchases;
     }
